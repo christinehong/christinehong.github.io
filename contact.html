@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="style2.ss">
+<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<header>
+		<div class="header">
+			<div class="profpic">
+		      <img src="http://farm8.staticflickr.com/7310/9039021708_46731e19b3_q.jpg" alt="profpic" width="100px"; height="100px"; >
+		    </div>
+			<h2><a href="./index.html" title="Take me back">Christine Hong</h2>
+			<ul class="nav">
+				<li>
+					<a href="./resume.html" title="Doing Things">Resume</a>
+				</li>	
+				<li>
+					<a href="./contact.html" title="Info">Contact</a>
+				</li>
+			</ul>
+			</div>
+		</div>
+	</header>
+
+	<div id="contact-form" class="clearfix">
+	    <h1>Get In Touch!</h1>
+	    <h2>I'm pretty awesome so I know you'll want to contact me :)</h2>
+	    <ul id="errors" class="">
+	        <li id="info">There were some problems with your form submission:</li>
+	    </ul>
+	    <p id="success">Thanks for your message! We will get back to you ASAP!</p>
+	    <form method="post" action="process.php">
+	        <label for="name">Name: <span class="required">*</span></label>
+	        <input type="text" id="name" name="name" value="" placeholder="Christine Hong" required="required" autofocus="autofocus" />
+	         
+	        <label for="email">Email Address: <span class="required">*</span></label>
+	        <input type="email" id="email" name="email" value="" placeholder="christine.hong@yale.edu" required="required" />
+	         
+	        <label for="telephone">Telephone: </label>
+	        <input type="tel" id="telephone" name="telephone" value="" />
+	         
+	        <label for="message">Message: <span class="required">*</span></label>
+	        <textarea id="message" name="message" placeholder="Your message must be greater than 20 characters" required="required" data-minlength="20"></textarea>
+	         
+	        <span id="loading"></span>
+	        <p><input type="submit" value="Sup" id="submit-button" /></p>
+	        <p id="req-field-desc"><span class="required">*</span> indicates a required field</p>
+	    </form>
+	</div>
+</body>
+
+</html>
